@@ -2,7 +2,7 @@
 
 ## Platform and tooling
 
-GossipGoblin 0.2 is a Java Android app, minimum API 31 and target/compile API 35. Builds use JDK 17, AGP 8.9.2, and the checksum-pinned Gradle 8.11.1 wrapper. The local SDK is in ignored `tmp/android-sdk/`; portable setup is in `README.md`. ADB clients use explicit IPv4 to the local server; the authorized Green Monster is K-M10P, serial `202412250354`, Android 12, currently `192.168.0.101:5555`.
+GossipGoblin 0.2 is a Java Android app, minimum API 31 and target/compile API 35. Builds use JDK 17, AGP 8.9.2, and the checksum-pinned Gradle 8.11.1 wrapper. The local SDK is in ignored `tmp/android-sdk/`; portable setup is in `README.md`. ADB clients use explicit IPv4 to the local server; the authorized Green Monster test device runs Android 12 (connection details in `docs/deployment.md`).
 
 The earlier permission-free deployment probe remains in `tools/deployment-check/`. Product behavior follows `docs/design.md`, including the explicitly accepted departure from the original continuous-recording rule in `task/vision.md`.
 

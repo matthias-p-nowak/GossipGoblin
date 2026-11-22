@@ -27,7 +27,18 @@ adb -H 127.0.0.1 connect 192.168.0.101:5555
 adb -H 127.0.0.1 devices -l
 ```
 
-Unlock the tablet and accept its debugging authorization prompt. The transport must report `device`, rather than `unauthorized`. Its DHCP address may change; the original connection notes identify it as a Leaderhub K-M10P.
+Unlock the tablet and accept its debugging authorization prompt. The transport must report `device`, rather than `unauthorized`.
+
+## Green Monster Wi-Fi ADB
+
+The Green Monster is a Leaderhub K-M10P, USB serial `202412250354`, with TCP/IP ADB on port `5555` at the DHCP address `192.168.0.101` (may change). If `connect` stops working, attach it over USB, read the new `inet` address, and re-enable TCP mode:
+
+```sh
+adb -H 127.0.0.1 -s 202412250354 shell ip -4 addr show wlan0
+adb -H 127.0.0.1 -s 202412250354 tcpip 5555
+```
+
+Port 5555 has no wireless-debugging pairing: use it only on a trusted network, and turn it off when no longer needed with `adb -H 127.0.0.1 -s 202412250354 usb`. The computer must be on the tablet's LAN; an environment without a route reports `No route to host`.
 
 ## Verify installation and launch
 

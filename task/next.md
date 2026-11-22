@@ -1,0 +1,3 @@
+- install adb and other necessary programs, use sudo if necessary
+- make a connection to the green monster
+- confirm that you can install a program on that tablet

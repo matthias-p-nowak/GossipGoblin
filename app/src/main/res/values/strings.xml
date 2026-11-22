@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rms_level">Sound level: %1$.1f dBFS</string>
+    <string name="rms_unavailable">Sound level: — dBFS</string>
+    <string name="threshold_level">Detection threshold: %1$d dBFS</string>
+    <string name="threshold_value">%1$d dBFS</string>
+    <string name="threshold_short">Threshold %1$d dBFS</string>
+    <string name="threshold_accessibility">Detection threshold</string>
+    <string name="graph_description">Live sound history for the last 30 seconds. Tap to arm or turn audio saving off.</string>
+    <string name="now">Now</string>
+    <item name="sound_graph" type="id" />
+    <item name="monitoring_status" type="id" />
+    <item name="rms_level" type="id" />
+    <item name="threshold_control" type="id" />
+</resources>
