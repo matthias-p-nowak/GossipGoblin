@@ -1,0 +1,1 @@
+- read `/prjs/GossipGoblin/tmp/green-monster.md` and install the necessary tools using sudo
